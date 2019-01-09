@@ -10,7 +10,6 @@ class PigLatinizer
    word.split("").each_with_index do |w,i|
      upcased[w.downcase+"-"+i.to_s]=(w==w.upcase)?true:false
    end
-   puts upcased
    word=word.downcase
    wordArray=word.split("")
    firstLetter=wordArray.shift
