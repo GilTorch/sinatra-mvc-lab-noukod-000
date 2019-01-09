@@ -28,7 +28,7 @@ class PigLatinizer
       end
      end
 
-
+     wordArray.join("")
 
   end
 
