@@ -1,3 +1,5 @@
+require_relative '../models/piglatinizer.rb'
+
 class App < Sinatra::Base
 
   get '/' do
