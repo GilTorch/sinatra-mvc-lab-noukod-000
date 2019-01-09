@@ -11,8 +11,6 @@
       <input name="user_phrase" type="text"/>
       <input type="submit"/>
     </form>
-    <% if defined? @user_phrase !== nil %>
-    <%=PigLatinizer.new.piglatinize(@user_phrase)%>
-    <% end %>
+    <%= @user_phrase %>
   </body>
 </html>
