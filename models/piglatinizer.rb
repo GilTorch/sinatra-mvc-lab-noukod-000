@@ -2,7 +2,8 @@ class PigLatinizer
 
 
   def piglatinize(word)
-    word+="pay"
+    words=word.split("")
+    first_letter=words[0].shift
   end
 
 end
