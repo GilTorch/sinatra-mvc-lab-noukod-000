@@ -5,7 +5,6 @@ class PigLatinizer
      wordArray=word.split("")
      firstLetter=wordArray.shift
       if(firstLetter.scan(/[bcdfghjklmnpqrstvwxz]/)!=[])
-         puts "I am a consonant"
         if(wordArray[0].scan(/[bcdfghjklmnpqrstvwxz]/)!=[])
              secondLetter=wordArray.shift
             wordArray.push(firstLetter,secondLetter)
