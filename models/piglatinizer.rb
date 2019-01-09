@@ -6,7 +6,7 @@ class PigLatinizer
     @word=word
   end
 
-  def piglatinize 
+  def piglatinize
   end
 
 end
