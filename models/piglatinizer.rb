@@ -19,9 +19,9 @@ class PigLatinizer
          wordArray.push("w","a","y")
        end
       end
- 
+
       wordArray.join("")
- 
+
    end
 
 end
