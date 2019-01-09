@@ -2,6 +2,7 @@ class PigLatinizer
 
 
   def piglatinize(word)
+     word=word.downcase
      wordArray=word.split("")
      firstLetter=wordArray.shift
       if(firstLetter.scan(/[bcdfghjklmnpqrstvwxz]/)!=[])
@@ -14,7 +15,8 @@ class PigLatinizer
          wordArray.push("a","y")
         end
       else
-       if(word[0].scan(/[aeiouy]/)!=[])
+       if(firstLetter.scan(/[aeiouy]/)!=[])
+         wordArray.push(firstLetter)
          wordArray.push("w","a","y")
        end
       end
