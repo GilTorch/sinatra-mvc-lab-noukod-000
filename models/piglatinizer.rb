@@ -14,12 +14,12 @@ class PigLatinizer
     if(firstLetter.scan(/[bcdfghjklmnpqrstvwxz]/)!=[])
       if(wordArray[0].scan(/[bcdfghjklmnpqrstvwxz]/)!=[])
           secondLetter=wordArray.shift
-            
+
          if(wordArray[0].scan(/[bcdfghjklmnpqrstvwxz]/)!=[])
           thirdLetter=wordArray.shift
           wordArray.push(firstLetter,secondLetter,thirdLetter)
           wordArray.push("a","y")
-          else 
+          else
           wordArray.push(firstLetter,secondLetter)
           wordArray.push("a","y")
          end
