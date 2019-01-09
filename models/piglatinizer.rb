@@ -4,10 +4,10 @@ class PigLatinizer
   def piglatinize(word)
 
     upcased={}
-    word.split("").each do |w|
-      upcased[w.downcase]=(w==w.upcase)?true:false
+    word.split("").each_with_index do |w,i|
+      upcased[w.downcase+"-"+i.to_s]=(w==w.upcase)?true:false
     end
-
+    puts upcased
     word=word.downcase
     wordArray=word.split("")
     firstLetter=wordArray.shift
@@ -27,11 +27,12 @@ class PigLatinizer
       end
      end
 
-     wordArray=wordArray.collect do |w|
-      w=upcased[w]?w.upcase : w.downcase
+     wordArray=wordArray.each_with_index.collect do |w,i|
+      w=upcased[w+"-"+i.to_s]?w.upcase : w.downcase
       w
      end
 
      wordArray.join("")
-   end
+
+  end
   end
