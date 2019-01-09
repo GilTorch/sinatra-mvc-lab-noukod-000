@@ -3,7 +3,8 @@ class PigLatinizer
 
   def piglatinize(word)
     words=word.split("")
-    first_letter=words[0].shift
+    first_letter=words.shift 
+    words+first_letter+"ay"
   end
 
 end
