@@ -1,4 +1,4 @@
-require_relative '../models/piglatinizer.rb'
+require_relative 'models/piglatinizer.rb'
 
 class App < Sinatra::Base
 
